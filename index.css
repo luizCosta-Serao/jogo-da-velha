@@ -1,0 +1,111 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #333;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+.players-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.players-name label {
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.players-name input {
+  text-align: center;
+  margin-bottom: 15px;
+  padding: .6rem 1.2rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.players-name input:hover,
+.players-name input:focus {
+  border-color: #fb1;
+}
+
+.init-game,
+.restart {
+  cursor: pointer;
+  background-color: #fb1;
+  border: none;
+  padding: .8rem 1.6rem;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
+.init-game:hover,
+.restart:hover {
+  background-color: #fc1;
+}
+
+.restart {
+  display: block;
+  margin: 30px auto 0 auto;
+}
+
+.turn {
+  margin-top: 10px;
+  height: 10px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tic-tac-toe {
+  max-width: 300px;
+  margin: 30px auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.tic-tac-toe button{
+  height: 100px;
+  border: .5px solid #fff;
+  cursor: pointer;
+  background-color: #fb1;
+  font-size: 4rem;
+  color: #333;
+}
+
+.tic-tac-toe button:hover {
+  background-color: #fc1;
+}
+
+.tic-tac-toe button.success {
+  color: #fff;
+  background-color: green;
+}
+
+.tic-tac-toe button.fail {
+  color: #fff;
+  background-color: red;
+}
